@@ -33,6 +33,19 @@ body{
   padding: 15px;
   transition:  ease-in-out s;
 }
+@media screen and (max-width: 390px){
+  .navigation{
+    width: 55px;
+    padding: 7px;
+  }
+  .navigation .logo a .hervest{
+  display: none;
+}
+    .navigation .logo a img:first-child{
+      padding: 10px ;
+    }
+}
+
 .navigation.active{
   width: 55px;
   padding: 7px;
@@ -56,6 +69,15 @@ body{
   height: calc(100vh - .5em);
   margin-bottom: 15px;
 }
+@media screen and (max-width: 390px){
+  .navigation .sidebar{
+    height: calc(100vh - 5em);
+  }
+}
+  
+.navigation.active .sidebar{
+  height: calc(100vh - 5em);
+}
 .sidebar .menu{
   width: 44px;
   height: 17px;
@@ -66,6 +88,17 @@ body{
   font-style: normal;
   margin-bottom: 15px;
   color: var(--light-text);
+}
+@media screen and (max-width: 390px) {
+  .menu{
+    display: none;
+  }
+  .list-text{
+    display: none;
+  }
+  .toggle{
+    display: none;
+  }
 }
 .navigation.active .sidebar .menu{
   display: none;
