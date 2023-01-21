@@ -7,42 +7,15 @@
   height: 100ch;
   padding: 10px 20px;
   margin-left: 20%;
-  /* border: 2px solid red; */
 }
-/* @media (max-width: 391px) {
+@media screen and (max-width: 390px){
   .main{
+    margin-left: 50px;
     width: 100%;
-    margin-left: 10%;
   }
-  .name{
-    width: 120px;
-    height: 30px;
-  }
-  .name img{
-    width: 30px;
-    height: 30px;
-  }
-    .name-text {
-      margin-left: 3px;
-    }
-        .name-text h2 {
-          font-size: 16px;
-        }
-    
-        .name-text h4 {
-          font-size: 12px;
-        }
-                .saving {
-                  width: 90%;
-                  height: 100px;
-                  background-color: #E2698D;
-                  margin-top: 20px;
-                  border-radius: 12px;
-                }
-                .total{
-                  padding: 20px 10px;
-                }
-} */
+}
+  
+
 .name{
   width: 197px;
   height: 52px;
@@ -50,9 +23,27 @@
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 390px){
+  .name{
+    width: 30px;
+    height: 52px;
+  }
+}
+  
+
 .name img{
   width: 52px;
   height: 52px;
+}
+@media screen and (max-width: 390px){
+  .name img{
+    width: 30px;
+    height: 30px;
+  }
+  .name-text{
+    margin-left: 5px;
+    width: 30px;
+  }
 }
 .name-text{
   margin-left: 10px;
@@ -63,6 +54,15 @@
   color: #B4B5C1;
   letter-spacing: 0.02em;
   font-weight: 700;
+}
+@media screen and (max-width: 390px) {
+  .name-text h4,
+  .name-text h2{
+    font-size: 5px;
+    line-height: 12px;
+    font-weight: 300;
+    letter-spacing: 0;
+  }
 }
 .name-text h2{
   font-size: 32px;
@@ -79,11 +79,27 @@
   margin-top: 20px;
   border-radius: 12px;
 }
+@media screen and (max-width: 390px){
+  .saving{
+    width: 60%;
+    height: 160px;
+    margin-top: 10px;
+  }
+}
 .total{
   padding: 70px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 390px){
+  .total{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:10px;
+    align-items: flex-start;
+  }
 }
 .detail h4{
   font-size: 14px;
@@ -100,11 +116,36 @@
   color: #FAFAFA;
   margin-top: 10px;
 }
+@media screen and (max-width: 390px){
+  .detail h4{
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 10px;
+  }
+  .detail h2{
+    font-size: 15px;
+    line-height: 14px;
+    margin-left: 5px;
+    align-items: flex-end;
+  }
+  .detail{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+  
 h2 span{
   text-decoration: line-through;
 }
 .hero{
   margin: 35px 0 15px;
+}
+@media screen and (max-width: 390px) {
+  .hero{
+    margin: 15px 0 5px;
+  }
 }
 .hero h1{
   font-size: 32px;
@@ -112,6 +153,18 @@ h2 span{
   line-height: 39px;
   letter-spacing: -0.02em;
   color: #B4B5C1;
+}
+@media screen and (max-width: 390px) {
+  .hero h1{
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+  .hero h5{
+    font-size: 8px;
+    line-height: 5px;
+    letter-spacing: 1px;
+  }
 }
 .hero h5{
   font-size: 16px;
@@ -125,6 +178,18 @@ h2 span{
   width: 90%;
   height: 380px;
 }
+@media screen and (max-width: 390px){
+  .box{
+    width: 60%;
+    height: 300px;
+  }
+  .grid{
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 .grid{
   padding: 35px 0;
   display: flex;
@@ -137,6 +202,14 @@ h2 span{
   border-radius: 12px;
   padding: 5px 10px;
   position: relative;
+}
+@media screen and (max-width: 390px) {
+  .grid-box{
+    width: 100%;
+    height: 90px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
 }
 .grid-box.new{
   height: 150px;
@@ -155,6 +228,13 @@ h2 span{
   background-color: #C2EFF0;
   margin-right: 8px;
 }
+@media screen and (max-width: 390px) {
+  .box-image{
+    width: 35px;
+    height: 35px;
+    position: relative;
+  }
+}
 .box-image img{
   padding: 25%;
 }
@@ -169,12 +249,40 @@ h2 span{
   letter-spacing: 0.02em;
   font-weight: 300;
 }
+@media screen and (max-width: 390px) {
+  .grid-box h4{
+    font-size: 14px;
+    width: 80%;
+    left: 30%;
+    top: 2px;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+}
 .grid-box .grid-price{
   margin-top: 12px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
+}
+@media screen and (max-width: 390px) {
+  .grid-box .grid-price{
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  .grid-price h2{
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 5px;
+    min-width: 70px;
+  }
+  .progress-bar{
+    position: absolute;
+    bottom: 7px;
+    width: 50%;
+
+  }
 }
 .grid-box .grid-price h2{
   font-size: 24px;
@@ -205,6 +313,19 @@ h2 span{
   line-height: 20px;
   letter-spacing: -0.11px;
 }
+@media screen and (max-width: 390px) {
+  .new h2{
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 5px;
+    min-width: 70px;
+  }
+  .new h5{
+    font-size: 8px;
+    line-height: 3px;
+    letter-spacing: -1px;
+  }
+}
 .new h5{
   font-family: 'Montserrat' Arial, Helvetica, sans-serif;
   font-size: 10px;
@@ -227,12 +348,37 @@ h2 span{
   width: 120px;
   height: 120px;
 }
+@media screen and (max-width: 390px) {
+  .new img{
+    width: 100px;
+    height: 100px;
+    top: 5px;
+    right: 5px;
+  }
+}
 .new:first-child img{
   margin-right: 10px;
   top: 20%;
 }
+@media screen and (max-width: 390px) {
+  .new:first-child img{
+    margin-right: 5px;
+    bottom: -50px;
+    right: 5px;
+  }
+    .new:nth-child(2) img {
+      margin-right: 5px;
+      top: 40px;
+      right: 5px;
+    }
+}
 .btn{
   margin-top: 15%;
+}
+@media screen and (max-width: 390px) {
+  .btn{
+    margin-top: 25%;
+  }
 }
 .btn button{
   position: relative;
@@ -259,8 +405,8 @@ h2 span{
   border-radius: 5px;
   z-index: -1;
   height: 28px;
-  background-color: #FBEAEF; */
-}
+  background-color: #FBEAEF; }*/
+
 .btn span{
   margin-left: 5px;
   font-family: 'Montserrat' Arial, Helvetica, sans-serif;
@@ -268,4 +414,10 @@ h2 span{
   font-weight: 300;
   line-height: 18px;
   color: #265859;
+}
+@media screen and (max-width: 390px) {
+  .btn span{
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
